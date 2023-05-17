@@ -996,12 +996,35 @@ button:disabled{
     display: none;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    color: #757373;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 767px) {
     /* header{
         display: none;
     } */
     .nav-container{
         display: none;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 20px;
+        font-size: 10px;
+    }
+
+    .footer p {
+        margin: 0px;
     }
     .mobile-nav-container{
         position: fixed;
